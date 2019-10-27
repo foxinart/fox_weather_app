@@ -1,0 +1,170 @@
+
+    h1 {
+        font-size: 30px;
+        color: #616161;
+        text-align: left;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        }
+
+        input {
+            align-content: right;
+            text-align: left;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            color: #616161;
+            margin: 0;
+            border: 0,5px solid #e0e0e0;
+            border-radius: 5px;
+            width: 160px;
+            height: 25px;
+            justify-content: right;
+        }
+
+        button {
+        text-align: center;
+        background: transparent;
+        border: 0;
+        }
+
+        hr {
+        border: 0.5px solid #BDBDBD;
+        max-lines: 400px;
+        }
+
+        i {
+          font-size: 30px;
+          text-align: center;
+          position: relative;
+          top: -8px;
+        }
+
+    .fa-search {
+        color:  #BDBDBD;
+        font-size: 16px;
+        align-content: center;
+        margin: 0;
+        top: 1px;
+        }
+
+      .weather-app {
+        border: 1px solid #e0e0e0;
+        margin: 60px auto;
+        max-width: 700px;
+        padding: 20px;
+        border-radius: 8px;
+        align-content: center;
+        justify-content: center;
+        background-color: #fafafa;
+        }
+        
+    .weather-app li {
+        list-style: none;   
+      }
+
+    .weather-app ul {
+        margin: 0 0 20px;
+        padding: 0;
+      }
+
+    .weather-temperature-today {
+        font-size: 75px;
+        line-height: 68px;
+        color: #616161;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: lighter;
+        position: relative;
+        top: -5px;
+      }
+
+    .weather-temperature-today small {
+        font-size: 14px;
+        position: relative;
+        top: -32px;
+        margin-left: 0px;
+        font-family: 'Open Sans', sans-serif;   
+      }
+
+      .clearfix {
+        display: inline-block;
+        justify-content: center;
+        vertical-align: middle;
+        align-items: center;
+      }
+
+      .active {
+        color: #000;
+        cursor: default;
+      }
+
+      .active:hover {
+        color: #000;
+        text-decoration: none;
+      }
+
+      ul#data-time {
+        font-size: 14px;
+        color: #616161;
+        text-align: left;
+        font-family: 'Open Sans', sans-serif;
+        display: block;
+        position: relative;
+        top: 13px;
+        }
+
+    ul#other-values {
+        font-size: 14px;
+        color: #616161;
+        text-align: left;
+        font-family: 'Open Sans', sans-serif;
+        display: block;
+        position: relative;
+        top: 57px;
+        }
+     
+    span#night {
+          color:#9E9E9E;
+      }
+
+    li#status {
+          font-size: 14px;
+          color: #9C27B0;
+          font-family: 'Open Sans', sans-serif;
+      }
+
+    i#icon-today {
+        font-size: 55px;
+        text-align: center;
+        color: #9C27B0;
+        position: relative;
+        top: -12px;
+        left: 8px;
+      }
+
+    i.fas.fa-cloud-sun-rain {  
+        color:#9C27B0;
+      }
+
+    i.fas.fa-cloud-sun {
+          color:#F57C00;
+      }
+
+    i.fas.fa-sun {
+          color: #FFC107;
+      }
+
+    i.fas.fa-cloud-showers-heavy {
+          color: #673AB7;
+      }
+
+    div.next-day {
+          font-size: 14px;
+          color: #616161;
+          text-align: center;
+          font-family: 'Open Sans', sans-serif;
+          display: inline-block;
+          justify-content: center;
+          vertical-align: middle;
+          align-items: center;
+      }
