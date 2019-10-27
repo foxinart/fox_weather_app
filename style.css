@@ -142,10 +142,9 @@
         left: 8px;
       }
     div#open-source {
-      text-align: right;
+      text-align: center;
       position: relative;
       top: -55px;
-      right: 204px;
       }
 
     i.fas.fa-cloud-sun-rain {  
