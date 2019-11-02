@@ -39,6 +39,10 @@
           top: -8px;
         }
 
+        li {
+          text-transform: capitalize;
+        }
+
     .fa-search {
         color:  #BDBDBD;
         font-size: 16px;
