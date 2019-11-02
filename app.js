@@ -7,7 +7,7 @@ function search(event) {
     }
 
 function displayTemperature(response) {
-  console.log(response.data);
+  
   let statusElement = document.querySelector("#status");
   statusElement.innerHTML = response.data.weather[0].description;
 
@@ -24,37 +24,11 @@ function displayTemperature(response) {
   pressureElement.innerHTML = Math.round(response.data.main.pressure);
 }
     
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${
-      searchInput.value
+let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value
     }&appid=c5c1992383057589b3e373582566187c&units=metric`;
-    axios.get(url).then(displayTemperature);
+axios.get(url).then(displayTemperature);
   }
   
-  //function convertToCelsius(response) {
-    //let temperature = document.querySelector("#temperature");
-    //temperature.innerHTML = Math.round(response.data.main.temp);
-  
-    //let link = document.querySelector("#celsius");
-    //link.classList.add("active");
-    //let fahrenheitLink = document.querySelector("#fahrenheit");
-    //fahrenheitLink.classList.remove("active");
-  //}
-  
-  //let celsiusLink = document.querySelector("#celsius");
-  //celsiusLink.addEventListener("click", convertToCelsius);
-  
-  //function convertToFahrenheit(event) {
-    //let temperature = document.querySelector("#temperature");
-    //temperature.innerHTML = Math.round((23 * 9) / 5 + 32);
-  
-    //let link = document.querySelector("#fahrenheit");
-    //link.classList.add("active");
-    //let celsiusLink = document.querySelector("#celsius");
-    //celsiusLink.classList.remove("active");
-  //}
-  
-  //let fahrenheitLink = document.querySelector("#fahrenheit");
-  //fahrenheitLink.addEventListener("click", convertToFahrenheit);
   
   let searchForm = document.querySelector("#search-form");
   searchForm.addEventListener("submit", search);
@@ -90,11 +64,44 @@ function displayTemperature(response) {
     "Friday",
     "Saturday"
   ];
+
   let day = days[currentTime.getDay()];
-  
-  dateDay.innerHTML = month + " " + date + " | " + day;
+  dateDay.innerHTML = `${month} ${date} | ${day}`;
   
   let hours = currentTime.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
   let minuties = currentTime.getMinutes();
-  dateTime.innerHTML = hours + ":" + minuties;
+  if (minuties < 10) {
+    minuties = `0${minuties}`;
+  }
+  dateTime.innerHTML = `${hours}:${minuties}`;
+
   
+  
+  //function convertToCelsius(response) {
+    //let temperature = document.querySelector("#temperature");
+    //temperature.innerHTML = Math.round(response.data.main.temp);
+  
+    //let link = document.querySelector("#celsius");
+    //link.classList.add("active");
+    //let fahrenheitLink = document.querySelector("#fahrenheit");
+    //fahrenheitLink.classList.remove("active");
+  //}
+  
+  //let celsiusLink = document.querySelector("#celsius");
+  //celsiusLink.addEventListener("click", convertToCelsius);
+  
+  //function convertToFahrenheit(event) {
+    //let temperature = document.querySelector("#temperature");
+    //temperature.innerHTML = Math.round((23 * 9) / 5 + 32);
+  
+    //let link = document.querySelector("#fahrenheit");
+    //link.classList.add("active");
+    //let celsiusLink = document.querySelector("#celsius");
+    //celsiusLink.classList.remove("active");
+  //}
+  
+  //let fahrenheitLink = document.querySelector("#fahrenheit");
+  //fahrenheitLink.addEventListener("click", convertToFahrenheit);
