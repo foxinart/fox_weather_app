@@ -6,6 +6,10 @@ function search(event) {
       city.innerHTML = searchInput.value;
     }
 
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=c5c1992383057589b3e373582566187c&units=metric`;
+    axios.get(url).then(displayTemperature);
+    }
+
 function displayTemperature(response) {
   
   let statusElement = document.querySelector("#status");
@@ -28,12 +32,7 @@ function displayTemperature(response) {
 
   iconElement.setAttribute("atl", response.data.weather[0].description);
   
-}
-    
-let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=c5c1992383057589b3e373582566187c&units=metric`;
-axios.get(url).then(displayTemperature);
-  }
-  
+}  
   
   let searchForm = document.querySelector("#search-form");
   searchForm.addEventListener("submit", search);

@@ -1,6 +1,6 @@
 
     h1 {
-        font-size: 30px;
+        font-size: 28px;
         color: #616161;
         text-align: left;
         font-family: 'Open Sans', sans-serif;
@@ -25,8 +25,9 @@
         input#btn {
         text-align: center;
         color: #616161;
-        background-color: #e0e0e0;
-        border: 0;
+        background-color: #F2F2F1;
+        border: 0.5px solid #e0e0e0;
+        margin: 0;
         height: 25px;
         width: 70px;
         font-size: 12px;
@@ -83,13 +84,13 @@
         font-family: 'Open Sans', sans-serif;
         font-weight: lighter;
         position: relative;
-        top: -35px;
+        top: -36px;
       }
 
     .weather-temperature-today small {
         font-size: 12px;
         position: relative;
-        top: -40px;
+        top: -41px;
         margin-left: 0px;
         font-family: 'Open Sans', sans-serif;   
       }
