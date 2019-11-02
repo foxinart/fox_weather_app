@@ -22,10 +22,15 @@ function displayTemperature(response) {
 
   let pressureElement = document.querySelector("#pressure");
   pressureElement.innerHTML = Math.round(response.data.main.pressure);
+
+  let iconElement = document.querySelector("#icon-today");
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+
+  iconElement.setAttribute("atl", response.data.weather[0].description);
+  
 }
     
-let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value
-    }&appid=c5c1992383057589b3e373582566187c&units=metric`;
+let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=c5c1992383057589b3e373582566187c&units=metric`;
 axios.get(url).then(displayTemperature);
   }
   
