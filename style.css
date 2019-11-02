@@ -12,25 +12,34 @@
             align-content: right;
             text-align: left;
             font-family: 'Open Sans', sans-serif;
-            font-size: 14px;
+            font-size: 12px;
             color: #616161;
             margin: 0;
             border: 0,5px solid #e0e0e0;
             border-radius: 5px;
-            width: 160px;
+            width: 170px;
             height: 25px;
             justify-content: right;
         }
 
-        button {
+        input#btn {
         text-align: center;
-        background: transparent;
+        color: #616161;
+        background-color: #e0e0e0;
         border: 0;
+        height: 25px;
+        width: 70px;
+        font-size: 12px;
+        position: relative;
+        left: 10px;
+
         }
 
         hr {
         border: 0.5px solid #BDBDBD;
         max-lines: 400px;
+        position: relative;
+        top: 10px;
         }
 
         img {
@@ -44,14 +53,6 @@
 
         li:first-letter {
           text-transform: capitalize;
-        }
-
-    .fa-search {
-        color:  #BDBDBD;
-        font-size: 16px;
-        align-content: center;
-        margin: 0;
-        top: 1px;
         }
 
       .weather-app {
@@ -138,7 +139,7 @@
           font-size: 14px;
           color: #616161;
           font-family: 'Open Sans', sans-serif;
-          font-weight: bolder;
+          
       }
 
     i#icon-today {
