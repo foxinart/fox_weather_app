@@ -29,7 +29,7 @@
                     <input 
                     id="search-input"
                     type="text" 
-                    placeholder="Search City" 
+                    placeholder="Type a city..." 
                     autocomplete="off"
                      />
                     </div>
@@ -39,12 +39,8 @@
                 </div>
                 </div> 
                     </form>
-                </div>
-
-            
-            <hr>
-        </br>
-            
+                </div>           
+            <hr>            
         <div class="row">  
             <div class="col-4">
                     <h1 id="city-name">Lisbon</h1>
@@ -64,9 +60,9 @@
 
             <div class="col-4">
                     <div class="clearfix">
-                <img id="icon-today" src="" alt="" class = "float-centre"/>
+                <img id="icon-today" src="" alt="" class = "float-left"/>
                 <div>
-                  <div class="weather-temperature-today float-centre">
+                  <div class="weather-temperature-today float-left">
                         <span id="temperature"></span>
 
                         <span class = "weather-unit">              
@@ -99,20 +95,17 @@
                     </ul>
             </div>    
         </div>
-
+        <hr id="second-line">  
         <div class="row weather-forecast" id="forecast">
         </div>
-
              
     </section>
    <div id="open-source">
     <small>
             <a  href="https://github.com/foxinart/fox_weather_app" target="_blank">GetHub source</a>, by Fox In Art
         </small> 
-    </div>
-    
+    </div>  
 </div>
-
 
     
 <script src="app.js"></script>

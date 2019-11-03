@@ -1,11 +1,13 @@
 
     h1 {
-        font-size: 28px;
+        font-size: 30px;
         color: #616161;
         text-align: left;
         font-family: 'Open Sans', sans-serif;
         font-weight: bold;
         text-transform: capitalize;
+        position: relative;
+        top: 17px;
         }
 
     h2 {
@@ -13,8 +15,10 @@
         color: #616161;
         text-align: center;
         font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
         display: block;
         justify-content: center;
+        position: relative;
       }
 
         input {
@@ -25,72 +29,61 @@
             color: #616161;
             margin: 0;
             border: 0,5px solid #e0e0e0;
-            border-radius: 5px;
+            border-radius: 3px;
             width: 170px;
-            height: 25px;
+            height: 30px;
             justify-content: right;
         }
 
-        input#btn {
+      input#btn {
         text-align: center;
         color: #616161;
         background-color: #F2F2F1;
         border: 0.5px solid #e0e0e0;
+        border-radius: 3px;
         margin: 0;
-        height: 25px;
+        height: 30px;
         width: 70px;
         font-size: 12px;
         position: relative;
-        left: 10px;
+        left: 15px;
 
         }
 
-        hr {
+      hr {
         border: 0.5px solid #BDBDBD;
         max-lines: 400px;
         position: relative;
-        top: 10px;
+        top: 12px;
         }
 
-        img {
-          block-size: 90px;
+      img {
+          block-size: 95px;
           text-align: center;
           position: relative;
-          top: -30px;
-          left: 30px;
-          
+          top: -10px;
         }
 
-        img#icon-forecast {
-          block-size: 70px;
-          text-align: center;
-          position: relative;
-          left: 0px;
-          
-          
-        }
-
-        li:first-letter {
+      li:first-letter {
           text-transform: capitalize;
         }
 
-      .weather-app {
+    .weather-app {
         border: 1px solid #e0e0e0;
         margin: 60px auto;
         max-width: 700px;
-        padding: 20px;
-        border-radius: 8px;
+        padding: 23px;
+        border-radius: 5px;
         align-content: center;
-        justify-content: center;
-      
-        }
+        justify-content: center; 
+      }
         
     .weather-app li {
         list-style: none;   
       }
 
     .weather-app ul {
-        margin: 0 0 20px;
+        margin: 0 0 23px;
         padding: 0;
       }
 
@@ -102,13 +95,13 @@
         font-family: 'Open Sans', sans-serif;
         font-weight: lighter;
         position: relative;
-        top: -36px;
+        top: -23px;
       }
 
     .weather-temperature-today small {
         font-size: 12px;
         position: relative;
-        top: -41px;
+        top: -42px;
         margin-left: 0px;
         font-family: 'Open Sans', sans-serif;   
       }
@@ -120,9 +113,8 @@
           font-family: 'Open Sans', sans-serif;
           display: block;
           justify-content: center;
-          vertical-align: middle;
           align-items: center;
-  
+          position: relative;        
       }
 
       .clearfix {
@@ -148,7 +140,7 @@
         font-family: 'Open Sans', sans-serif;
         display: block;
         position: relative;
-        top: 16px;
+        top: 32px;
         }
 
     ul#other-values {
@@ -158,20 +150,28 @@
         font-family: 'Open Sans', sans-serif;
         display: block;
         position: relative;
-        top: 57px;
+        top: 76px;
         }
-     
-    li#status {
-          font-size: 14px;
-          color: #616161;
-          font-family: 'Open Sans', sans-serif;
-          
-      }
 
     div#open-source {
       text-align: center;
       position: relative;
       top: -55px;
+      }
+
+      hr#second-line {
+        margin: 0;
+        position: relative;
+        top: -15px;
+      }
+
+      img#icon-forecast {
+        block-size: 65px;
+        text-align: center;
+        position: relative;
+        margin: 0;
+        left: 5px;
+        top: 0px;     
       }
 
     

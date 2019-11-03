@@ -31,7 +31,7 @@ function displayForecast(response) {
   forecastElement.innerHTML = null;
   let forecast = null;
 
-  for (let index = 0; index < 5; index++) {
+  for (let index = 0; index < 6; index++) {
     forecast = response.data.list[index];
     forecastElement.innerHTML += ` 
   <div class="col-sm next-day">
@@ -44,7 +44,7 @@ function displayForecast(response) {
           ${formatHours(forecast.dt * 1000)}
       </h2>
       <div class="weather-temperature-forecast">
-      <strong>${Math.round(forecast.main.temp_max)}º</strong> | ${Math.round(forecast.main.temp_min)}º
+      ${Math.round(forecast.main.temp_max)}º | ${Math.round(forecast.main.temp_min)}º
       </div>
   </div>
   `;   
@@ -81,7 +81,7 @@ function displayTemperature(response) {
 }  
 
 function search(city) {
-  let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
+  let apiKey = "c5c1992383057589b3e373582566187c";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
 
@@ -124,7 +124,6 @@ function convertToCelsius(event) {
   temperatureElement.innerHTML = Math.round(temperatureCelsius);
 
 }
-
 
 let temperatureCelsius = null;
 
