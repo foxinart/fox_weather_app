@@ -52,7 +52,6 @@ function displayForecast(response) {
 }    
 
 function displayTemperature(response) {
-  console.log(response.data);
   
   let statusElement = document.querySelector("#status");
   statusElement.innerHTML = response.data.weather[0].description;
@@ -74,19 +73,26 @@ function displayTemperature(response) {
   let iconElement = document.querySelector("#icon-today");
   iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 
-  iconElement.setAttribute("atl", response.data.weather[0].description);
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 
   let currentLocation = document.querySelector("h1");
   currentLocation.innerHTML = response.data.name;
  
 }  
 
+function search(city) {
+  let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function getTemperature(position) {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
-  console.log(position.coords.latitude);
-  console.log(position.coords.latitude);
-
+  
   let apiKey = "c5c1992383057589b3e373582566187c";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
 
@@ -119,6 +125,7 @@ function convertToCelsius(event) {
 
 }
 
+
 let temperatureCelsius = null;
 
 let fahrenheitLink = document.querySelector("#fahrenheit");
@@ -128,7 +135,6 @@ let celsiusLink = document.querySelector("#celsius");
 celsiusLink.addEventListener("click", convertToCelsius);
 
   
-
   let searchForm = document.querySelector("#search-form");
   searchForm.addEventListener("submit", search);
   
@@ -176,5 +182,5 @@ celsiusLink.addEventListener("click", convertToCelsius);
     minuties = `0${minuties}`;
   }
   dateTime.innerHTML = `${hours}:${minuties}`;
-
   
+search ("city");
