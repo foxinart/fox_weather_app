@@ -50,101 +50,100 @@
 
         }
 
-      hr {
-        border: 0.5px solid #BDBDBD;
-        max-lines: 400px;
-        position: relative;
-        top: 12px;
-        }
+    hr {
+      border: 0.5px solid #BDBDBD;
+      max-lines: 400px;
+      position: relative;
+      top: 12px;
+      }
 
-      img {
-          block-size: 95px;
-          text-align: center;
-          position: relative;
-          top: -10px;
-          left: 23px;
-        }
+    img {
+      block-size: 95px;
+      text-align: center;
+      position: relative;
+      top: -10px;
+      left: 23px;
+    }
 
-      li:first-letter {
-          text-transform: capitalize;
-        }
+    li:first-letter {
+      text-transform: capitalize;
+      }
 
     .weather-app {
-        border: 1px solid #e0e0e0;
-        margin: 60px auto;
-        max-width: 700px;
-        padding: 23px;
-        border-radius: 5px;
-        align-content: center;
-        justify-content: center; 
+      border: 1px solid #e0e0e0;
+      margin: 60px auto;
+      max-width: 700px;
+      padding: 23px;
+      border-radius: 5px;
+      align-content: center;
+      justify-content: center; 
       }
         
     .weather-app li {
-        list-style: none;   
+      list-style: none;   
       }
 
     .weather-app ul {
-        margin: 0 0 23px;
-        padding: 0;
+      margin: 0 0 23px;
+      padding: 0;
       }
 
     .weather-temperature-today {
-        font-size: 70px;
-        line-height: 68px;
-        color: #616161;
-        text-align: center;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: lighter;
-        display: block;
-        position: relative;
-        top: -23px;
+      font-size: 70px;
+      line-height: 68px;
+      color: #616161;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: lighter;
+      display: block;
+      position: relative;
+      top: -23px;
       }
 
     .weather-temperature-today small {
-        font-size: 14px;
-        font-family: 'Open Sans', sans-serif; 
-        position: relative;
-        top: -42px;
-        left: -15px;
-          
+      font-size: 14px;
+      font-family: 'Open Sans', sans-serif; 
+      position: relative;
+      top: -42px;
+      left: -15px;        
       }
 
-      .weather-temperature-forecast {
-        font-size: 14px;
-          color: #616161;
-          text-align: center;
-          font-family: 'Open Sans', sans-serif;
-          display: block;
-          justify-content: center;
-          align-items: center;
-          position: relative;        
+    .weather-temperature-forecast {
+      font-size: 14px;
+      color: #616161;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      display: block;
+      justify-content: center;
+      align-items: center;
+      position: relative;        
       }
 
-      .clearfix {
-        display: block;
-        justify-content: center;
-        vertical-align: middle;
-        align-items: center;
+    .clearfix {
+      display: block;
+      justify-content: center;
+      vertical-align: middle;
+      align-items: center;
       }
 
-      .weather-unit .active {
-        color: #616161;
-        cursor: default;
+    .weather-unit .active {
+      color: #616161;
+      cursor: default;
       }
 
-      .weather-unit .active:hover {
-        text-decoration: none;
+    .weather-unit .active:hover {
+      text-decoration: none;
       }
 
-      ul#data-time {
-        font-size: 14px;
-        color: #616161;
-        text-align: left;
-        font-family: 'Open Sans', sans-serif;
-        display: block;
-        position: relative;
-        top: 32px;
-        }
+    ul#data-time {
+      font-size: 14px;
+      color: #616161;
+      text-align: left;
+      font-family: 'Open Sans', sans-serif;
+      display: block;
+      position: relative;
+      top: 32px;
+      }
 
     ul#other-values {
         font-size: 14px;
@@ -159,24 +158,24 @@
     div#open-source {
       font-size: 15px;
       font-family: 'Open Sans', sans-serif;
-      text-align: right;
+      text-align: center;
       position: relative;
       top: -55px;
       }
 
-      hr#second-line {
-        margin: 0;
-        position: relative;
-        top: -15px;
+    hr#second-line {
+      margin: 0;
+      position: relative;
+      top: -15px;
       }
 
-      img#icon-forecast {
-        block-size: 65px;
-        text-align: center;
-        position: relative;
-        margin: 0;
-        left: 5px;
-        top: 0px;     
+    img#icon-forecast {
+      block-size: 65px;
+      text-align: center;
+      position: relative;
+      margin: 0;
+      left: 5px;
+      top: 0px;     
       }
 
     
