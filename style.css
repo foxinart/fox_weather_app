@@ -102,13 +102,12 @@
         align-items: center;
       }
 
-      .active {
-        color: #000;
+      .weather-unit .active {
+        color: #616161;
         cursor: default;
       }
 
-      .active:hover {
-        color: #000;
+      .weather-unit .active:hover {
         text-decoration: none;
       }
 
