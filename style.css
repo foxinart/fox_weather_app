@@ -8,6 +8,15 @@
         text-transform: capitalize;
         }
 
+    h2 {
+        font-size: 14px;
+        color: #616161;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        display: block;
+        justify-content: center;
+      }
+
         input {
             align-content: right;
             text-align: left;
@@ -49,6 +58,15 @@
           position: relative;
           top: -30px;
           left: 30px;
+          
+        }
+
+        img#icon-forecast {
+          block-size: 70px;
+          text-align: center;
+          position: relative;
+          left: 0px;
+          
           
         }
 
@@ -95,6 +113,18 @@
         font-family: 'Open Sans', sans-serif;   
       }
 
+      .weather-temperature-forecast {
+        font-size: 14px;
+          color: #616161;
+          text-align: center;
+          font-family: 'Open Sans', sans-serif;
+          display: block;
+          justify-content: center;
+          vertical-align: middle;
+          align-items: center;
+  
+      }
+
       .clearfix {
         display: block;
         justify-content: center;
@@ -118,7 +148,7 @@
         font-family: 'Open Sans', sans-serif;
         display: block;
         position: relative;
-        top: 13px;
+        top: 16px;
         }
 
     ul#other-values {
@@ -131,10 +161,6 @@
         top: 57px;
         }
      
-    span#night {
-          color:#9E9E9E;
-      }
-
     li#status {
           font-size: 14px;
           color: #616161;
@@ -142,14 +168,6 @@
           
       }
 
-    i#icon-today {
-        font-size: 55px;
-        text-align: center;
-        color: #9C27B0;
-        position: relative;
-        top: -12px;
-        left: 8px;
-      }
     div#open-source {
       text-align: center;
       position: relative;
@@ -158,13 +176,4 @@
 
     
 
-    div.next-day {
-          font-size: 14px;
-          color: #616161;
-          text-align: center;
-          font-family: 'Open Sans', sans-serif;
-          display: inline-block;
-          justify-content: center;
-          vertical-align: middle;
-          align-items: center;
-      }
+    
