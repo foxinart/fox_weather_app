@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather-app</title>
 
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -14,7 +13,6 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
 
 </head>
 <body>
@@ -31,38 +29,36 @@
                     type="text" 
                     placeholder="Type a city..." 
                     autocomplete="off"
-                     />
+                    />
+
                     </div>
                     <div class="col-9">
-                    <input id="btn" type="submit" value="Search"
-                    />
+                    <input id="btn" type="submit" value="Search"/>
                 </div>
                 </div> 
+                
                     </form>
                 </div>           
-            <hr>            
+    <hr>            
         <div class="row">  
             <div class="col-4">
+
                     <h1 id="city-name"></h1>
 
                     <ul id="data-time">
-                        <li id="current-day">
-                        October, 6 | Sunday 
-                        </li>
-                        <li id="current-time">
-                        18:00
-                        </li>
-                        <li id="status">
-                        Better take an umbrella!
-                        </li>
+                        <li id="current-day"></li>
+                        <li id="current-time"></li>
+                        <li id="status"></li>
                     </ul> 
+
             </div>
 
-            <div class="col-4">
-                    <div class="clearfix">
+        <div class="col-4">
+            <div class="clearfix">
                 <img id="icon-today" src="" alt=""/>
                 <div>
                   <div class="weather-temperature-today">
+
                         <span id="temperature"></span>
 
                         <span class = "weather-unit">              
@@ -76,12 +72,14 @@
                             </a>
                         </small>
                         </span>
+
                     </div>
                 </div>
             </div>
         </div>
 
             <div class="col-4">
+
                     <ul id="other-values">
                         <li>
                             Atm. pressure: <span id="pressure"></span> hPa
@@ -93,13 +91,16 @@
                             Wind: <span id="wind"></span> km/h
                         </li>
                     </ul>
+
             </div>    
-        </div>
-        <hr id="second-line">  
-        <div class="row weather-forecast" id="forecast">
-        </div>
+    </div>
+
+    <hr id="second-line">  
+
+        <div class="row weather-forecast" id="forecast"></div>
              
     </section>
+
    <div id="open-source">
     <small>
             <a  href="https://github.com/foxinart/fox_weather_app" target="_blank">GetHub source</a> by Fox In Art
@@ -107,7 +108,6 @@
     </div>  
 </div>
 
-    
 <script src="app.js"></script>
     
 </body>

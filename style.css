@@ -8,7 +8,7 @@
         text-transform: capitalize;
         position: relative;
         top: 17px;
-        }
+      }
 
     h2 {
         font-size: 14px;
@@ -21,19 +21,19 @@
         position: relative;
       }
 
-        input {
-            align-content: right;
-            text-align: left;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 12px;
-            color: #616161;
-            margin: 0;
-            border: 0,5px solid #e0e0e0;
-            border-radius: 3px;
-            width: 170px;
-            height: 30px;
-            justify-content: right;
-        }
+      input {
+        align-content: right;
+        text-align: left;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        color: #616161;
+        margin: 0;
+        border: 0,5px solid #e0e0e0;
+        border-radius: 3px;
+        width: 170px;
+        height: 30px;
+        justify-content: right;
+      }
 
       input#btn {
         text-align: center;
@@ -48,7 +48,7 @@
         position: relative;
         left: 15px;
 
-        }
+      }
 
     hr {
       border: 0.5px solid #BDBDBD;
@@ -67,7 +67,7 @@
 
     li:first-letter {
       text-transform: capitalize;
-      }
+    }
 
     .weather-app {
       border: 1px solid #e0e0e0;
@@ -77,16 +77,16 @@
       border-radius: 5px;
       align-content: center;
       justify-content: center; 
-      }
+    }
         
     .weather-app li {
       list-style: none;   
-      }
+    }
 
     .weather-app ul {
       margin: 0 0 23px;
       padding: 0;
-      }
+    }
 
     .weather-temperature-today {
       font-size: 70px;
@@ -97,14 +97,14 @@
       font-weight: lighter;
       display: block;
       position: relative;
-      top: -23px;
+      top: -24px;
       }
 
     .weather-temperature-today small {
       font-size: 14px;
       font-family: 'Open Sans', sans-serif; 
       position: relative;
-      top: -42px;
+      top: -40px;
       left: -15px;        
       }
 
@@ -177,7 +177,3 @@
       left: 5px;
       top: 0px;     
       }
-
-    
-
-    
