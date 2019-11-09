@@ -153,6 +153,7 @@ celsiusLink.addEventListener("click", convertToCelsius);
     "Saturday"
   ];
 
+
   let day = days[currentTime.getDay()];
   dateDay.innerHTML = `${month} ${date} | ${day}`;
   
